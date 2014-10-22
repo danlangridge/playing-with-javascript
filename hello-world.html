@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+
+  var table = $('#tableFadeIn');
+  for ( i = 0; i < 6; i++) {
+   table.append("<tr><td><p>hello</p></td></tr>");
+  }
+
+});
+</script>
+</head>
+<body>
+
+<table id="tableFadeIn">
+</table>
+
+</body>
+</html> 
