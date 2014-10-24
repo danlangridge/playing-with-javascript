@@ -1,0 +1,14 @@
+p {color: red;}
+
+.bar {
+  color: blue;
+}
+
+#top-bar {
+  font-size: 30px;
+  background-color: yellow;
+}
+
+#top-bar p:hover {
+  font-weight: bolder;
+}
