@@ -15,9 +15,11 @@ $(document).ready(function(){
 
 $('#tableFadeIn').ready(function() {
   $('#tableFadeIn').click(function() {
-    $('#tableFadeIn tr').each(function() {
-      $(this).append("<td>world</td>").hide().fadeIn();
-    });  
+    $.get("example.asp", function(data, status) {
+      $('#tableFadeIn tr').each(function() {
+        $(this).append("<td>" + data + "</td>").hide().fadeIn();
+      });
+    });
   });
 });;
 </script>
